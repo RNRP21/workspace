@@ -79,3 +79,10 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
+
+function downloadPDF() {
+    const link = document.createElement('a');
+    link.href = 'file/resume.pdf'; // Replace with your PDF file path
+    link.download = 'resume.pdf'; // Replace with the desired file name
+    link.click();
+}
